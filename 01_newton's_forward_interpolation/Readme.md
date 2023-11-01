@@ -1,4 +1,4 @@
-## Newton's Forward Interpolation
+# Newton's Forward Interpolation
 
 Newton's Forward Interpolation is a numerical method for constructing an interpolating polynomial for a set of data points. It's a way to approximate values between data points by using a polynomial that passes through those points. This method is particularly useful when you have equidistant data points, meaning the x-values are equally spaced.
 
