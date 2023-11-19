@@ -19,7 +19,10 @@ int main(){
     integration = f(lower)+f(upper);
     for(i=1; i<=subInterval-1; i++){
         k = lower + i*stepSize;
-        integration += 2 * f(k);
+        if(i%2==0)
+            integration += 2*(f(k));
+        else
+            integration += 4*(f(k));
     }
 
     integration = integration*stepSize/2;
