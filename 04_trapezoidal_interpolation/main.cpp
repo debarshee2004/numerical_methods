@@ -28,7 +28,7 @@ int main() {
 
     // Trapezoidal rule for numerical integration
     integration = f(lower) + f(upper);
-    for (i = 1; i <= subInterval - 1; i++) {
+    for (i = 1; i < subInterval; i++) {
         k = lower + i * stepSize;
         integration += 2 * f(k);
     }

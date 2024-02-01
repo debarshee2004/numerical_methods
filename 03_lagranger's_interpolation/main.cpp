@@ -38,8 +38,8 @@ int main() {
 
         // Lagrange's Interpolation Formula
         for (i = 0; i < n; i++) {
-            s = 1;
-            t = 1;
+                s = 1;
+                t = 1;
             for (j = 0; j < n; j++) {
                 if (j != i) {
                     s = s * (a - x[j]);
