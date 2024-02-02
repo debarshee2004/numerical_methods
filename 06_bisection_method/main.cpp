@@ -30,7 +30,7 @@ int main() {
             } else {
                 b = c;
             }
-            h = (b + a) / 2;
+            h = (a + b) / 2;
             printf("%f\n", h);
         } while (fabs(h - c) > 0.001);
 

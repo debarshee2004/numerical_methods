@@ -16,6 +16,7 @@ void forward(float x[20], float y[20][20], int n) {
     for (j = 1; j < n; j++) {
         for (i = 0; i < n - j; i++) {
             y[i][j] = y[i + 1][j - 1] - y[i][j - 1];
+            // printf(" i=%d , j=%d, y=%f \n",i,j,y[i][j]);
         }
     }
 
@@ -37,6 +38,7 @@ void forward(float x[20], float y[20][20], int n) {
     for (j = 1; j < n; j++) {
         p = p * (u - j + 1) / j;
         sum = sum + p * y[0][j];
+        // printf(" i=%d , j=%d, p=%f, sum=%f \n",i,j,p,sum);
     }
 
     printf("\n The value of y at x = %0.1f is %0.3f.", a, sum);
